@@ -503,7 +503,7 @@ footer{
         background-image: linear-gradient(90deg,rgba(46,46,46,1.0),rgba(26,19,23,0.95));
         border-radius: 0 min(3.5vh, 3.5vw) min(3.5vh, 3.5vw) min(3.5vh, 3.5vw); /* pyöristää nurkan*/
         margin-top: min(1vh,1.5vw);
-        margin-bottom: 3vw;
+        margin-bottom: min(3vw,3rem);
         overflow:hidden;
     }
         #bottomcircle{
