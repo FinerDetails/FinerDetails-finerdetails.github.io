@@ -295,7 +295,7 @@ main{
                 border-radius:min(3.5vh, 3.5vw) 0 0 min(3.5vh, 3.5vw);
                 margin-bottom: 7.5%;
                 margin-top: 17.5%;
-                box-shadow: min(1vw, 1vh) min(1vw, 1vh) min(1vw, 1vh) min(1vw, 1vh) rgba(26,19,23,0.25);
+                box-shadow: min(1vw, 1vh) min(1vw, 1vh) rgba(26,19,23,0.25);
             }
 
             h2{
