@@ -480,7 +480,7 @@ main{
     }
     .comments{
         position:relative;
-        background-color: rgba(109,81,61,0.11);
+        margin: min(5.5vh,7vw);
         overflow:hidden;
     }
 footer{
