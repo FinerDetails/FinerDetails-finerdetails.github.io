@@ -295,7 +295,7 @@ main{
                 border-radius:min(3.5vh, 3.5vw) 0 0 min(3.5vh, 3.5vw);
                 margin-bottom: 7.5%;
                 margin-top: 17.5%;
-                box-shadow: min(1vw, 1vh) min(1vw, 1vh) rgba(204,201,198);
+                box-shadow: min(1vw, 1vh) min(1vw, 1vh) min(1vw, 1vh) min(1vw, 1vh) rgba(26,19,23,0.25);
             }
 
             h2{
@@ -476,7 +476,8 @@ main{
             bottom:calc(-1 * (clamp(calc(2rem + min(1vh,1.5vw)), calc(min(6vw,6vh) + min(1vh,1.5vw)), calc(4rem + min(1vh,1.5vw)))));
             left:calc(-1 * (clamp(calc(2rem + min(1vh,1.5vw)), calc(min(6vw,6vh) + min(1vh,1.5vw)), calc(4rem + min(1vh,1.5vw)))));
             border-radius:50%;
-            background-color:rgba(204,201,198,1.0);
+            background-color:#FFDD00;
+            box-shadow: min(0.6vw, 0.5vh) min(0.5vw, 0.5vh) rgba(26,19,23,0.5);
     }
     .comments{
         position:relative;
@@ -499,7 +500,7 @@ footer{
         min-height: 4rem;
         left: 50%;
         transform: translateX(-50%);
-        background-image: linear-gradient(90deg,rgba(204,201,198,1.0),rgba(204,201,198,0.95));/*rgba(222,214,211,0.95));*/
+        background-image: linear-gradient(90deg,rgba(46,46,46,1.0),rgba(26,19,23,0.95));
         border-radius: 0 min(3.5vh, 3.5vw) min(3.5vh, 3.5vw) min(3.5vh, 3.5vw); /* pyöristää nurkan*/
         margin-top: min(1vh,1.5vw);
         margin-bottom: min(2vh,3vw);
@@ -516,7 +517,8 @@ footer{
             top:calc(-1 * (clamp(calc(2rem + min(1vh,1.5vw)), calc(min(6vw,6vh) + min(1vh,1.5vw)), calc(4rem + min(1vh,1.5vw)))));
             left:calc(-1 * (clamp(calc(2rem + min(1vh,1.5vw)), calc(min(6vw,6vh) + min(1vh,1.5vw)), calc(4rem + min(1vh,1.5vw)))));
             border-radius:50%;
-            background-color:rgba(109,81,61,0.11);
+            background-color:#FFDD00;
+            box-shadow: min(0.6vw, 0.5vh) min(0.5vw, 0.5vh) rgba(26,19,23,0.25);
         }
 
         .footerInfo{
@@ -527,4 +529,5 @@ footer{
             margin: 0 min(5.5vh,7vw);
             font-size:clamp(0.6rem,min(2vh, 2vw),1rem);
             font-weight:bolder;
+            color:#FCFCFC;
         }
