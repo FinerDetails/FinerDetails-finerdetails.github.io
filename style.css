@@ -54,7 +54,7 @@ header{
     }
         h1{
             position:absolute;
-            transform: translate(-3.4%, -50%);
+            transform: translate(-3.5%, -50%);
             top: 50%;
             color:#FFFFFF;
             font-size:clamp(2.5rem, min(20vh,20vw), 14rem);
