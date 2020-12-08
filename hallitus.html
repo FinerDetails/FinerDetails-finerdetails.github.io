@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang=fi>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="kojo, sukuseura">
+    <Title>Kojo-sukuseura ry</Title>
+    <link rel="shortcut icon" type="image/svg" href="img/knight_favicon.svg">
+</head>
+<body>
+        <header>
+            <div class="banner">
+                <div id="pattern"></div>
+                <div id="gradient"></div>
+                <h1>KOJO</h1>
+            </div>
+            <div id="logoWrapper">
+                <div id="hiderBox"></div>
+                <div id="logo"></div>
+            </div>
+        </header>
+        <nav>
+            <div id="navBox" class="navBox">
+                <ul>
+                    <li class="navList1"><a data-content="Etusivu" href="index.html" id="buttonLeft" class="navLink">Etusivu</a></li>
+                    <li class="navList2"><a data-content="Historiaa" href="historiaa.html" class="navLink">Historiaa</a></li>
+                    <li class="navList3"><a data-content="Galleria" href="galleria.html" class="navLink">Galleria</a></li>
+                    <li id="open" class="navList4"><a href="hallitus.html" style="color:#FF8F7F;" class="navLink">Hallitus</a></li>
+                    <li class="navList5"><a data-content="Kokoukset" href="kokoukset.html" class="navLink">Kokoukset</a></li>
+                    <li class="icon"><a href="javascript:void(0);" class="icon" onclick="dropdown()">
+                        <i class="fa fa-bars"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <article class="con" id="bottom-con">
+                <div id="topcircle"></div>
+                <div class="textwrapper">
+                <h3>Sukuseuran hallitus</h3>
+            <p><b>Sukuseuran esimies</b> (erovuoroinen v.2021) <br>
+                Pertti Kojo <br>
+                Vähä-Kuijärvi 18 <br>
+                18300 Heinola <br>
+                puh. 040 5920770 <br>
+                rantalaavu@gmail.com <br>
+                <br>
+                <b>Sukuseuran varaesimies</b> (erovuoroinen v.2021) <br>
+                Arto Vettenranta <br>
+                Kauppakatu 2 C 39 <br>
+                40100 Jyväskylä <br>
+                puh. 040 0680011 <br>
+                arto.vettenranta@gradia.fi <br>
+                <br>
+                <b>Jäsen, hallituksen sihteeri</b> <br>
+                Riitta Harju <br>
+                Helvintie 4b <br>
+                01420 Vantaa <br>
+                puh. 045 2331314 <br>
+                riitta.harju@netti.fi <br>
+                <br>
+                <b>Jäsen, rahastonhoitaja</b> (erovuoroinen v.2021) <br>
+                Airi Helminen <br>
+                Kassarakuja 6 <br>
+                04220 Kerava <br>
+                puh. 040 5756586 <br>
+                airi.helminen@sodexo.com <br>
+                <br>
+                <b>Jäsen</b> (erovuoroinen v.2021) <br>
+                Anssi Kojo <br>
+                Kärköläntie 4 <br>
+                16670 Lappila <br>
+                puh. 0400 131358 <br>
+                anssi.kojo@gmail.com <br>
+                <br>
+                <b>Jäsen</b> (erovuoroinen v.2021) <br>
+                Pekka Kojo <br>
+                Lintukulma 4 <br>
+                02660 Espoo <br>
+                puh.040 5044173 <br>
+                st.pekkakojo@gmail.com <br>
+                <br>
+                <b>Jäsen</b> (erovuoroinen v.2021) <br>
+                Leena Rantala <br>
+                Nirvankatu 45 <br>
+                33820 Tampere <br>
+                puh. 044 0655772 <br>
+                <br>
+                <b>Jäsensihteeri</b> <br>
+                Lasse Kojo <br>
+                Rantakartanontie 2 G 45 <br>
+                00910 Helsinki <br>
+                puh. 040 5566126 <br>
+                lasseko10@gmail.com <br>    
+            </p>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <div id="footerBox">
+                <div id="bottomcircle"></div>
+                <p class="footerInfo">
+                    Copyright © 2020 Kojo-sukuseura ry. All Rights Reserved.
+                    <br>
+                    Website by Erkka Finér
+                </p>
+            </div>
+        </footer>
+    <script src="https://kit.fontawesome.com/043e29b286.js" crossorigin="anonymous"></script>
+    <script>
+        function dropdown() {
+    var x = document.getElementById("navBox");
+    if (x.className === "navBox") {
+        x.className += " responsive";
+    } else {
+        x.className = "navBox";
+    }
+    }
+    </script>
+</body>
+</html>

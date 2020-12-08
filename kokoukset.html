@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang=fi>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="kojo, sukuseura">
+    <Title>Kojo-sukuseura ry</Title>
+    <link rel="shortcut icon" type="image/svg" href="img/knight_favicon.svg">
+</head>
+<body>
+        <header>
+            <div class="banner">
+                <div id="pattern"></div>
+                <div id="gradient"></div>
+                <h1>KOJO</h1>
+            </div>
+            <div id="logoWrapper">
+                <div id="hiderBox"></div>
+                <div id="logo"></div>
+            </div>
+        </header>
+        <nav>
+            <div id="navBox" class="navBox">
+                <ul>
+                    <li class="navList1"><a data-content="Etusivu" href="index.html" id="buttonLeft" class="navLink">Etusivu</a></li>
+                    <li class="navList2"><a data-content="Historiaa" href="historiaa.html" class="navLink">Historiaa</a></li>
+                    <li class="navList3"><a data-content="Galleria" href="galleria.html" class="navLink">Galleria</a></li>
+                    <li class="navList4"><a data-content="Hallitus" href="hallitus.html" class="navLink">Hallitus</a></li>
+                    <li id="open" class="navList5"><a href="kokoukset.html" style="color:#FF8F7F;" class="navLink">Kokoukset</a></li>
+                    <li class="icon"><a href="javascript:void(0);" class="icon" onclick="dropdown()">
+                        <i class="fa fa-bars"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <article class="con" id="bottom-con">
+                <div id="topcircle"></div>
+                <div class="textwrapper">
+                <h3>Sukuseuran kokoukset</h3>
+            <p>Hei,<br><br>
+            
+Kojo -sukuseuran vuosikokous 2020 on peruutettu Korona-epidemian vuoksi. Päätös perustuu Suomen Hallituksen suositukseen. Kojo -Sukuseuran säännöt antavat myös mahdollisuuden pitää vuosikokous  kahden vuoden välein. Sukuseuran hallitus on pitänyt sääntömääräisen kokouksen Heinolassa 23.05.2020 ja saanut käytyä läpi kaikki sääntöjen mukaiset asiat. Päätettiin myös, että ensivuoden kokous pidetään Asikkalan Talukkassa 14.08.2021. Rentouttavaa kesää kaikille. Terveisin Pekka Kojo
+<br><br>
+Seuraava Kojo -sukuseuran vuosikokous pidetään 15.08 etelä-suomessa. Kokouspaikka ilmoitetaan maalis-huhtikuussa.
+Ilmoittautumiset 15.7.2019 mennessä Riitta Harjulle, joko
+riitta.harju(@)netti.fi tai 045-23301314. Varsinainen kokous alkaa
+15.8.2020 klo 12. Tervetuloa!            
+</p>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <div id="footerBox">
+                <div id="bottomcircle"></div>
+                <p class="footerInfo">
+                    Copyright © 2020 Kojo-sukuseura ry. All Rights Reserved.
+                    <br>
+                    Website by Erkka Finér
+                </p>
+            </div>
+        </footer>
+    <script src="https://kit.fontawesome.com/043e29b286.js" crossorigin="anonymous"></script>
+    <script>
+        function dropdown() {
+    var x = document.getElementById("navBox");
+    if (x.className === "navBox") {
+        x.className += " responsive";
+    } else {
+        x.className = "navBox";
+    }
+    }
+    </script>
+</body>
+</html>

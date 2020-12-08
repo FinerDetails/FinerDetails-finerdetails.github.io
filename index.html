@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang=fi>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="kojo,sukuseura,sukututkimus,erkka finer">
+    <Title>Kojo-sukuseura ry</Title>
+    <link rel="shortcut icon" type="image/svg" href="img/knight_favicon.svg">
+</head>
+<body>
+    <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fi_FI/sdk.js#xfbml=1&version=v9.0" nonce="3FeOEdWF"></script>
+        <header>
+            <div class="banner">
+                <div id="pattern"></div>
+                <div id="gradient"></div>
+                <h1>KOJO</h1>
+            </div>
+            <div id="logoWrapper">
+                <div id="hiderBox"></div>
+                <div id="logo"></div>
+            </div>
+        </header>
+        <nav>
+            <div id="navBox" class="navBox">
+                <ul>
+                    <li id="open" class="navList1"><a href="index.html" id="buttonLeft" class="navLink" style="color:#FF8F7F;">Etusivu</a></li>
+                    <li class="navList2"><a data-content="Historiaa" href="historiaa.html" class="navLink">Historiaa</a></li>
+                    <li class="navList3"><a data-content="Galleria" href="galleria.html" class="navLink">Galleria</a></li>
+                    <li class="navList4"><a data-content="Hallitus" href="hallitus.html" class="navLink">Hallitus</a></li>
+                    <li class="navList5"><a data-content="Kokoukset" href="kokoukset.html" class="navLink">Kokoukset</a></li>
+                    <li class="icon"><a href="javascript:void(0);" class="icon" id="icon" onclick="dropdown()">
+                        <i class="fa fa-bars"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <article class="con" id="bottom-con">
+                <div id="topcircle"></div>
+                <div class="textwrapper">
+                <h2>Tervetuloa Kojo-sukuseuran kotisivuille!</h2>
+                <figure id="seal"></figure>
+                    <p class="welcome">
+                Kojo-sukuseura ry on tarkoitettu kaikille Kojo-sukuisille tai kojolaisuudesta kiinnostuneille asuinpaikasta riippumatta. Tältä sivustolta löydät tietoa sukuseurasta, sen historiasta ja toiminnasta sekä kuvia sukuseuran aiemmista tapahtumista. Voit kommentoida artikkeleita ja keskustella muiden käyttäjien kanssa.
+                        </p>
+                </div>
+            </article>
+            <!--<section class="comments">
+                    <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fi_FI/sdk.js#xfbml=1&version=v9.0" nonce="3FeOEdWF"></script>
+                <div class="fb-comments" data-href="file:///C:/Users/Erkka/Desktop/rootfolder%20%E2%80%93%20kopio/index.html" data-numposts="5" data-width="80%"></div>
+            </section>-->
+        </main>
+        <footer>
+            <div id="footerBox">
+                <div id="bottomcircle"></div>
+                <p class="footerInfo">
+                    Copyright © 2020 Kojo-sukuseura ry. All Rights Reserved.
+                    <br>
+                    Website by Erkka Finér
+                </p>
+                
+            </div>
+        </footer>
+    <script src="https://kit.fontawesome.com/043e29b286.js" crossorigin="anonymous"></script>
+    <script>
+        function dropdown() {
+    var x = document.getElementById("navBox");
+    if (x.className === "navBox") {
+        x.className += " responsive";
+    } else {
+        x.className = "navBox";
+    }
+    }
+    </script>
+</body>
+</html>
