@@ -482,7 +482,7 @@ main{
         position:relative;
         max-width: 1050px;
         margin: 0 auto;
-        margin-bottom: min(4vh,6vw);
+        margin-top: min(4vh,6vw);
         border-radius:min(3.5vh, 3.5vw);
         background-color: rgba(109,81,61,0.11);
         overflow:hidden;
