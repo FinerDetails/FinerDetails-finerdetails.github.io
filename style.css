@@ -263,7 +263,7 @@ main{
             .his_a{
                 position:relative;
                 display:inline-block;
-                font-size:clamp(1rem,min(3vh, 3vw),2.3rem);
+                font-size:clamp(1rem,min(3vh, 3vw),2rem);
                 text-decoration:none;
                 font-weight: bold;
                 padding: 2.5%;
@@ -400,7 +400,7 @@ main{
             }
 
             p{
-                font-size:clamp(1rem,min(4vh, 4vw),1.75rem);
+                font-size:clamp(1rem,min(4vh, 4vw),1.5rem);
                 color:#2e2e2e;
                 font-family:quicksand;
                 line-height: 1.6;
