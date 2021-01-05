@@ -2,14 +2,17 @@
     src: url(fonts/Poppins-Medium.ttf);
     font-family: "poppins";
 }
+
 @font-face {
     src: url(fonts/Roboto-Regular.ttf);
     font-family: "roboto";
 }
+
 @font-face {
     src: url(fonts/Quicksand-VariableFont_wght.ttf);
     font-family: "quicksand";
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +25,7 @@ html, body{
 body{
     display: grid;
     grid-template-columns: 1fr 95vw 1fr;
-    grid-template-rows: min(31vh,31.5vw) calc(clamp(2rem,min(8vw,8vh),4.5rem) + min(2vh,3vw)) auto auto;
+    grid-template-rows: clamp(8rem,min(31vh,31.5vw),30rem) calc(clamp(2rem,min(8vw,8vh),4.5rem) + min(2vh,3vw)) auto auto;
     grid-template-areas:
         ". header ."
         ". nav ."
@@ -34,10 +37,9 @@ body{
 header{
     grid-area: header;
     position:relative;
-    height: min(27vh,27vw);
     margin: min(1vh,1vw) 3vw;
-    margin-top: min(3vh,3vw);
-    margin-bottom: min(1vh,1.5vw);
+    margin-top: clamp(0.5rem,min(3vh,3vw),4rem);
+    margin-bottom: clamp(0.5rem,min(1vh,1.5vw),2rem);
     overflow:hidden;
 }
     .banner{
@@ -45,6 +47,7 @@ header{
         max-width: 1050px;
         height: min(27vh,27vw);
         max-height: 90%;
+        min-height: calc(6rem * 0.9);
         bottom:0;
         left: 0;
         right: 0;
@@ -57,7 +60,7 @@ header{
             transform: translate(-3.5%, -50%);
             top: 50%;
             color:#FFFFFF;
-            font-size:clamp(2.5rem, min(20vh,20vw), 14rem);
+            font-size:clamp(4rem, min(20vh,20vw), 14rem);
             margin: 0;
             font-family: roboto;
             color: #FCFCFC
@@ -72,23 +75,26 @@ header{
     }
         #logo{
             position:absolute;
-            height: min(30vh,30vw);
-            width:min(30vh,30vw);
+            height: clamp(6.5rem,min(30vw,30vh),110%);
+            width: clamp(6.5rem,min(30vw,30vh),110%);
             background-image: url("img/knight.svg");
             background-repeat:no-repeat;
-            background-position:left center;
+            background-position:right center;
             margin-right:auto;
-            right:max(-4vh,-4vw);
+            right:max(-3vh,-3vw);
+            bottom:-10%;
             z-index:2;
         }
+
     #hiderBox{
         position:absolute;
-        height: min(30vh,30vw);
-        width:min(18vh,18vw);
+        height: 100%;
+        width: min(15vw,15vh);
         background-color:#FCFCFC;
-        right:-7.5%;
+        right: max(-5vw,-5vh);
         z-index:1
     }
+
     #pattern{
         height:100%;
         width:100%;
@@ -98,6 +104,7 @@ header{
         background-repeat:repeat;
         background-attachment: fixed;
     }
+
     #gradient{
         position:absolute;
         height:100%;
@@ -105,6 +112,7 @@ header{
         top:0;
         background-image: linear-gradient(-90deg,rgba(255,221,0,1.0),rgba(255,221,0,0));
     }
+
 nav{
     grid-area: nav;
     position:sticky; /*valikko seuraa rullatessa*/
@@ -113,6 +121,7 @@ nav{
     margin: min(1vh,1.5vw) 3vw;
     z-index:2;
 }
+
     #navBox{
         position:relative;
         display:inline-block; /* pitää bannerin ja navbarin samassa tasossa*/
@@ -125,6 +134,7 @@ nav{
         border-radius:0 0 0 min(3.5vh, 3.5vw); /* pyöristää nurkan*/
         overflow:hidden; /*estää vasemman alanurkan ulkopuolelta klikkaamisen*/
     }
+
         ul{
             justify-content: center;
             align-items: center;
@@ -133,12 +143,14 @@ nav{
             height: 100%;
             margin: 0 auto;
         }
+
             ul li{
                 float:left; /*poistetaan välilyönnit nappien välistä*/
                 display: inline-block; /*lista-itemit horisontaalisesti*/
                 padding: 0;
                 transition:150ms;
             }
+
                 .navList1{width:17.330035263515177729317978385327%;} /*linkkitekstin toisiinsa suhteellinen pituus*/
                 .navList2{width:21.434299926108818281759691459261%;} /*yhteistä vakioprosenttia käytettäessä navList5 jää taakse sivun skaalautuessa*/
                 .navList3{width:18.862376172196490469239040976565%;}
@@ -157,6 +169,7 @@ nav{
                     font-family: poppins;
                     overflow:hidden;
                 }
+
 #buttonLeft{
     border-radius:0 0 0 min(3.5vh, 3.5vw);
 }
@@ -198,7 +211,7 @@ nav{
     body{overflow-x: hidden;}
     #navBox li:not(#open):not(.icon) {opacity: 0; width:0; transition:none;} /*piilottaa menun*/
     #navBox ul {width:100%;}
-    #open {width:auto; padding-left:min(5.5vh,7vw);}
+    #open {width:auto; padding-left: clamp(1rem,min(5.5vh,7vw),2rem);}
     #navBox a {font-size:1.2rem; height: clamp(2rem,min(7vw, 7vh),4.5rem);}
     nav{text-align-last:left;}
     #navBox .icon {display:inline-block;}
@@ -211,29 +224,29 @@ main{
     grid-area: main;
     position:relative;
     height: auto;
-    margin-top: min(4vh,6vw);
-    margin-bottom: min(1vh,1.5vw);
+    margin-top: clamp(1rem,min(4vh,6vw),4rem);
+    margin-bottom: clamp(0.5rem,min(1vh,1.5vw),3rem);
     margin-left: 3vw;
     margin-right: 3vw;
     z-index:1;
 }
     .con{
-        position:relative;
+        position: relative;
         max-width: 1050px;
         margin: 0 auto;
-        margin-bottom: min(4vh,6vw);
-        border-radius:min(3.5vh, 3.5vw);
+        margin-bottom: clamp(1rem,min(4vh,6vw),3rem);
+        border-radius: min(3.5vh, 3.5vw);
         background-color: rgba(109,81,61,0.08); /* #ECE9E6 */
-        overflow:hidden;
+        overflow: hidden;
     }
     #bottom-con{
-        border-radius:min(3.5vh, 3.5vw) min(3.5vh, 3.5vw) min(3.5vh, 3.5vw) 0;
-        margin-bottom:0;
+        border-radius: min(3.5vh, 3.5vw) min(3.5vh, 3.5vw) min(3.5vh, 3.5vw) 0;
+        margin-bottom: 0;
     }
         .textwrapper{
-            position:relative;
-            display:inline-block;
-            margin: min(5.5vh,7vw);
+            position: relative;
+            display: inline-block;
+            margin: clamp(1rem,min(5.5vh,7vw),5rem);
         }
             #seal{
                 float:left;
@@ -313,9 +326,9 @@ main{
                 position:absolute;
                 display:inline-block;
                 bottom:-5%;
-                left: -2%;
-                width:104%;
-                height:62.5%;
+                left:-10px;
+                width: calc(100% + 20px);
+                height: 62.5%;
                 z-index:-1;
                 background-color: #FF8F7F;
                 border-radius:0 0 min(1.5vh, 1.5vw) 0;
@@ -327,7 +340,7 @@ main{
                 position:absolute;
                 display:inline-block;
                 top:21.5%;
-                left: -2%;
+                left: -10px;
                 width:330px;
                 height:33.5%;
                 z-index:-1;
@@ -343,10 +356,10 @@ main{
         }
 @media screen and (max-width:414px){
             h2::after{
-                width:200px;
+                width:205px;
             }
             h2::before{
-                width:265px;
+                width:270px;
             }
         }
 @media screen and (max-width:332px){
@@ -377,8 +390,8 @@ main{
                 position:absolute;
                 display:inline-block;
                 bottom:-5%;
-                left: -2.5%;
-                width:105%;
+                left: -10px;
+                width: calc(100% + 20px);
                 height:62.5%;
                 z-index:-1;
                 background-color: #FF8F7F;
@@ -473,16 +486,14 @@ main{
             max-height: 8rem;
             min-width: 4rem;
             min-height: 4rem;
-            bottom:calc(-1 * (clamp(calc(2rem + min(1vh,1.5vw)), calc(min(6vw,6vh) + min(1vh,1.5vw)), calc(4rem + min(1vh,1.5vw)))));
+            bottom:calc(-1 * (clamp(calc(2rem + min(1vh,1.5vw)), calc(min(6vw,6vh) + clamp(0.25rem,min(1vh,1.5vw),1.5rem)), calc(4rem + min(1vh,1.5vw)))));
             left:calc(-1 * (clamp(calc(2rem + min(1vh,1.5vw)), calc(min(6vw,6vh) + min(1vh,1.5vw)), calc(4rem + min(1vh,1.5vw)))));
             border-radius:50%;
             background-color:#FFDD00;
-            box-shadow: min(0.6vw, 0.5vh) min(0.5vw, 0.5vh) rgba(26,19,23,0.5);
     }
     .comments{
         position:relative;
         margin: min(5.5vh,7vw);
-        overflow:hidden;
     }
 footer{
     position:relative;
@@ -514,11 +525,10 @@ footer{
             max-height: 8rem;
             min-width: 4rem;
             min-height: 4rem;
-            top:calc(-1 * (clamp(calc(2rem + min(1vh,1.5vw)), calc(min(6vw,6vh) + min(1vh,1.5vw)), calc(4rem + min(1vh,1.5vw)))));
+            top:calc(-1 * (clamp(calc(2rem + min(1vh,1.5vw)), calc(min(6vw,6vh) + clamp(0.25rem,min(1vh,1.5vw),1.5rem)), calc(4rem + min(1vh,1.5vw)))));
             left:calc(-1 * (clamp(calc(2rem + min(1vh,1.5vw)), calc(min(6vw,6vh) + min(1vh,1.5vw)), calc(4rem + min(1vh,1.5vw)))));
             border-radius:50%;
             background-color:#FFDD00;
-            box-shadow: min(0.6vw, 0.5vh) min(0.5vw, 0.5vh) rgba(26,19,23,0.45);
         }
 
         .footerInfo{
