@@ -150,7 +150,8 @@ nav{
             }
 
                 .navList1{width:17.330035263515177729317978385327%;} /*linkkitekstin toisiinsa suhteellinen pituus*/
-                .navList2{width:21.434299926108818281759691459261%;} /*yhteistä vakioprosenttia käytettäessä navList5 jää taakse sivun skaalautuessa*/
+                .navList2{width:21.434299926108818281759691459261%;
+                        cursor: default;                           } /*yhteistä vakioprosenttia käytettäessä navList5 jää taakse sivun skaalautuessa*/
                 .navList3{width:18.862376172196490469239040976565%;}
                 .navList4{width:18.031550933852373829305362817717%;}
                 .navList5{width:24.34173770432713969037792636113%;}
