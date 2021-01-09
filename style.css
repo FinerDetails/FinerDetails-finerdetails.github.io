@@ -210,7 +210,7 @@ nav{
     /*dropdown menu*/
     body{overflow-x: hidden;}
     #navBox li:not(#open):not(.icon) {opacity: 0; width:0; transition:none;} /*piilottaa menun*/
-    #navBox ul {width:100%;}
+    #navBox ul:not(.submenu) {width:100%;}
     #open {width:auto;}
     #navBox a:not(.submenu_li_a) {font-size:1.2rem; height: clamp(2rem,min(7vw, 7vh),4.5rem); padding-left:min(5.5vh,7vw);}
     nav{text-align-last:left;}
@@ -225,6 +225,7 @@ nav{
     position:absolute;
     z-index:7;
     height: auto;
+    width:200%;
     border-radius: 0 0 0 min(3.5vh, 3.5vw);
     background-color: rgba(255,255,255,0.1);
 }
