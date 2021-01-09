@@ -55,11 +55,17 @@ SOFTWARE.-->
         <nav>
             <div id="navBox" class="navBox">
                 <ul>
-                    <li class="navList1"><a data-content="Etusivu" href="index.html" id="buttonLeft" class="navLink">Etusivu</a></li>
-                    <li class="navList2"><a data-content="Historiaa" href="historiaa.html" class="navLink">Historiaa</a></li>
-                    <li id="open" class="navList3"><a href="galleria.html" style="color:#FF8F7F;" class="navLink">Galleria</a></li>
-                    <li class="navList4"><a data-content="Hallitus" href="hallitus.html" class="navLink">Hallitus</a></li>
-                    <li class="navList5"><a data-content="Kokoukset" href="kokoukset.html" class="navLink">Kokoukset</a></li>
+                    <li class="navList navList1"><a data-content="Etusivu" href="index.html" id="buttonLeft" class="navLink">Etusivu</a></li>
+                    <li class="navList navList2"><a data-content="Historiaa" href="historiaa.html" class="navLink">Historiaa</a>
+                        <ul class="submenu">
+                            <li class="submenu_li"><a data-content="Sukuseuran historiaa" class="submenu_li_a" href=historiaa.html#sukuseuran_historiaa>Sukuseuran historiaa</a></li>
+                            <li class="submenu_li"><a data-content="Kojo-sukuhaaroja" class="submenu_li_a" href="historiaa.html#kojo-sukuhaaroja">Kojo-sukuhaaroja</a></li>
+                            <li class="submenu_li"><a data-content="Cojo, Kåijo, Kåjo, Kojo" class="submenu_li_a" href="historiaa.html#kojo">Cojo, Kåijo, Kåjo, Kojo</a></li>
+                        </ul>
+                    </li>
+                    <li id="open" class="navList navList3"><a href="galleria.html" style="color:#FF8F7F;" class="navLink">Galleria</a></li>
+                    <li class="navList navList4"><a data-content="Hallitus" href="hallitus.html" class="navLink">Hallitus</a></li>
+                    <li class="navList navList5"><a data-content="Kokoukset" href="kokoukset.html" class="navLink">Kokoukset</a></li>
                     <li class="icon"><a href="javascript:void(0);" class="icon" onclick="dropdown()">
                         <i class="fa fa-bars"></i>
                         </a></li>
