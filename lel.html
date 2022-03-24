@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+<style>
+    body{background-color: rgb(253, 246, 236);
+        margin:0;
+        min-width:500px;
+        min-height:1000px;
+    }
+    
+    header{background-color:rgb(200, 216, 143);
+        width:100vw;
+        min-width:500px;
+        height: 150px;
+        position: relative;}
+    h1{
+        font-family: 'Roboto', sans-serif;
+        font-weight:500;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;}
+    h2{
+        display:block;
+        float:left;
+        font-family: 'Roboto';
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+    h4{
+        margin:0;
+        display:block;
+        float:left;
+        font-family: 'Roboto';
+        font-weight: 500;
+    }
+    p{
+        display:block;
+        float:left;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 300; 
+    }
+    
+    article{
+        position:relative;
+        min-height: 750px;
+        height:auto;
+    }
+    footer{
+        position:absolute;
+        bottom:-40vh;
+        height:15vh;
+        width:100%;
+        min-width:500px;
+        background-color: rgb(241, 200, 144);
+    }
+    .containter{
+        margin:auto;
+        display: inline-block;
+        width:300px;
+        vertical-align: top;
+        
+        margin: 0 auto;
+    }
+    .container2{
+        background-color: rgb(250, 235, 215);
+        padding:25px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        min-width:420px;
+        min-height:550px;
+    }
+    #img{
+        display: inline-block;
+        background-image: url("liukkari1.jpg");
+        background-repeat: no-repeat;
+        height:470px;
+        width:420px;
+        
+    }
+    .disclaimer{
+        margin: 20px;
+        font-family: "roboto";
+        font-size: 12px;
+    }
+    li{
+        font-family: 'Roboto';
+    }
+    input{
+        margin: 5px 10px;
+        font-family: 'Roboto';
+    }
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Täysin legit liukkariliike OY</h1>
+    </header>
+    <article>
+        <div class="container2">
+            <div id="img">
+
+            </div>
+            <div class="containter">
+                <h4>Nompparelleilla päälystetty kinuskinen päärynäkrokantti</h4>
+                <p>Lipaise ostoskoriisi kieltä kihelmöivä uutuus!</p>
+                <ul>
+                    <li>800ml</li>
+                    <li>gluteiiniton</li>
+                </ul>
+                
+
+                <input type="number" placeholder="Määrä">
+                <br>
+                <input type="button" value="Tilaa!">
+            </div>
+        </div>
+    </article>
+    <footer>
+        <p class="disclaimer">Täysin legit liukkariliike OY ei ole vastuussa pankkikorttitietojen menetyksistä, oikeudenkäynneistä, vaateista, kanteista, vaatimuksista, tai kustannuksista taikka vahingosta, olivat ne mitä tahansa tai aiheutuivat ne sitten miten tahansa</p>
+        <br>
+        <p class="disclaimer">©Täysin legit liukkariliike OY 2014</p>
+    </footer>
+</body>
+</html>
